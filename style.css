@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Figtree:ital,wght@0,388;1,388&family=M+PLUS+Rounded+1c&display=swap');
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #1d9285;
+}
+/*Seccion Inicio*/
+.Inicio{
+    background: linear-gradient(to right, #252A2E, #252A2E);
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 80%);
+    height: 90vh;
+    padding: 0 20px;
+}
+.Inicio .contenido{/*ancho del contenido*/
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+}
+.Inicio header{/*header completo*/
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items:  center;
+}
+.Inicio .logo{ /*nombre*/
+    display: flex;
+    align-items: center;
+    color: aqua;
+    font-size: 25px;
+}
+.Inicio .logo i{ /*Separacion entre logo y #*/
+    display: inline-block ;
+    margin-right: 20px;
+}
+#Inicio header nav a{ /*inicio,servicios,habilidades,trabajos,contacto*/
+    color: #010000;
+    text-decoration:none ;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+#Inicio header nav a:hover{/*Lineas de abajo  de inicio servicios habilidades*/
+    border-bottom: 2px solid #ff5b00;   
+}
+.Inicio .redes a{
+    text-decoration: none;
+    color: #901a81;
+    display: inline-block;
+    margin: 0 10px;
+}
+.Inicio .redes a:hover{ /*Pinto las redes cuando paso con el mouse*/
+    color:#ff5b00;
+}
+.Inicio .fila{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.Inicio .fila .col{
+    width: 50%;
+}
+.Inicio .fila .col h2{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.Inicio .fila .col p{
+    margin-bottom: 20px;
+}
+.Inicio .fila .col .contenedor-img{
+    max-width: 400px;
+    margin: auto;
+}
+.Inicio .fila .col .contenedor-img img{
+    width: 100%;
+}
+.Inicio .fila .col button{
+    background: none;
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid #ff9900;
+    color: #fff;
+    background: linear-gradient(to right, #ff5b00, #ff9900);
+    transition: .5s;
+    cursor: pointer;
+}
+.Inicio .fila .col button:hover{ /*se agranda el boton descarga*/
+    transform: scale(1.1);
+}
+#icono-nav{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50px;
+    transition: .3s;
+    cursor: pointer;
+    display: none;
+}
+#icono-nav{
+    background-color: #3e3e3e;
+}
+.sombra{
+    filter:drop-shadow(0em 30px 20px #9bd2f4)
+}
+
+/*SERVICIOS*/
+
+.estudios{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    top: -76px;
+}
+.estudios .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+.estudios .fila .col{
+    text-align: center;
+    width: 30%;
+}
+.estudios .fila .col .card{
+    border: 1px solid #b8c46c;
+    height: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.estudios .icono{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.estudios .icono .circulo{
+    width: 92%;
+    height: 90%;
+    border-radius: 50px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+.estudios h3{
+    margin-bottom: 20px;
+}
+.estudios .card p{
+    color: #161b4f;
+    line-height: 28px;
+    font-size: 13px;
+}
+.estudios .card a{
+    text-decoration: none;
+    color: #008cff;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    transform: translate(-50);
+}
+
+/* SECCION T R A B A J O S */
+.trabajos{
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 20px 0;
+    margin-bottom: 50px;
+}
+.trabajos h2{
+    font-family: 'M PLUS Rounded 1c';
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
+
+.trabajos .galeria .item img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -20px;
+}
+.trabajos .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap:30px;
+}
+.trabajos .galeria .item{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8d8d8d ;
+    border-radius: 10px;
+}
+.trabajos .galeria .item .info{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color:#fff ;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+.trabajos .galeria .item .info h3{
+    color: #000;
+    margin-bottom: 20px;
+}
+.trabajos .galeria .item .info span{
+    color: #8d8d8d;
+    display: inline-block;
+    border: 2px solid #8d8d8d;
+    margin: 0 3px;
+    padding:  0 5px;
+}
+.trabajos .galeria .item .info a{
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: #007be5;
+    font-weight: bold;
+}
+.trabajos .galeria .item:hover .info{
+    opacity: 1;
+    top: 0;
+}
+
+/*Contacto*/
+.contacto{
+    /*background-image: url(img/);*/
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.contacto .contenido-seccion{ /*Muevo toda la seccion al medio*/
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{   /*Revisar letra*/
+    font-size: 40px;
+    font-family: 'M PLUS Rounded 1c';
+    text-align: center;
+    padding: 20 px 0;
+}
+.contacto .fila{/*Meensajes para llenar al izquierdo*/
+    display: flex;
+}
+.contacto .col{
+width: 50%;
+padding: 10px;
+position: relative;
+}
+.contacto .col input, .contacto .col textarea{/*Se genera campos para llenar*/
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    background: none;
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid #ff9900;
+    color: #fff;
+    background: linear-gradient(to right, #ff5b00, #ff9900);
+    transition: .5s;
+    cursor: pointer;
+}
+.contacto .button .overlay{
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transition: 1s;
+}
+.Inicio .fila .col button:hover{ /*se agranda el boton descarga*/
+    transform: scale(1.1);
+}
+.contacto .col img{
+    width: 140%;
+}
+.contacto .col .info{/*Arreglar  que quede todo en una linea*/
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-10%, -30%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* footer */
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+   text-decoration: none;
+    color: #901a81;
+    display: inline-block;
+    margin: 0 10px;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;  
+    transform: translate(-50%);
+    top: -25px;	
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
