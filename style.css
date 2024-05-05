@@ -19,28 +19,28 @@ body{
     height: 90vh;
     padding: 0 20px;
 }
-.Inicio .contenido{/*ancho del contenido*/
+.Inicio .contenido{
     max-width: 1100px;
     margin: auto;
     color: #fff;
 }
-.Inicio header{/*header completo*/
+.Inicio header{
     display: flex;
     justify-content: space-between;
     padding: 30px;
     align-items:  center;
 }
-.Inicio .logo{ /*nombre*/
+.Inicio .logo{ 
     display: flex;
     align-items: center;
     color: aqua;
     font-size: 25px;
 }
-.Inicio .logo i{ /*Separacion entre logo y #*/
+.Inicio .logo i{ 
     display: inline-block ;
     margin-right: 20px;
 }
-#Inicio header nav a{ /*inicio,servicios,habilidades,trabajos,contacto*/
+#Inicio header nav a{ 
     color: #010000;
     text-decoration:none ;
     display: inline-block;
@@ -48,7 +48,7 @@ body{
     text-transform: uppercase;
     border: 2px solid transparent;
 }
-#Inicio header nav a:hover{/*Lineas de abajo  de inicio servicios habilidades*/
+#Inicio header nav a:hover{
     border-bottom: 2px solid #ff5b00;   
 }
 .Inicio .redes a{
@@ -57,7 +57,7 @@ body{
     display: inline-block;
     margin: 0 10px;
 }
-.Inicio .redes a:hover{ /*Pinto las redes cuando paso con el mouse*/
+.Inicio .redes a:hover{ 
     color:#ff5b00;
 }
 .Inicio .fila{
@@ -81,14 +81,15 @@ body{
 }
 .Inicio .fila .col .contenedor-img img{
     width: 100%;
+    border-radius: 50%;
 }
 .Inicio .fila .col button{
     background: none;
     width: fit-content;
     padding: 5px 40px;
-    border: 2px solid #ff9900;
+    border: 2px solid #1d9285;
     color: #fff;
-    background: linear-gradient(to right, #ff5b00, #ff9900);
+    background: linear-gradient(to right, #1d9285, #1d9285);
     transition: .5s;
     cursor: pointer;
 }
@@ -112,7 +113,7 @@ body{
     filter:drop-shadow(0em 30px 20px #9bd2f4)
 }
 
-/*SERVICIOS*/
+/*Estudios*/
 
 .estudios{
     max-width: 1100px;
@@ -177,7 +178,7 @@ body{
     transform: translate(-50);
 }
 
-/* SECCION T R A B A J O S */
+/* Seccion trabajos*/
 .trabajos{
     max-width: 1100px;
     margin: auto;
@@ -190,8 +191,6 @@ body{
     font-size: 40px;
     margin-bottom: 20px;
 }
-
-/* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
 
 .trabajos .galeria .item img{
     width: 100%;
@@ -247,81 +246,56 @@ body{
 
 /*Contacto*/
 .contacto{
-    /*background-image: url(img/);*/
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
     margin-bottom: 50px;
 }
-.contacto .contenido-seccion{ /*Muevo toda la seccion al medio*/
+.contacto .contenido-seccion{ /*Medio*/
     max-width: 1100px;
     margin: auto;
 }
-.contacto h2{   /*Revisar letra*/
+.contacto h2{  
     font-size: 40px;
     font-family: 'M PLUS Rounded 1c';
     text-align: center;
     padding: 20 px 0;
 }
-.contacto .fila{/*Meensajes para llenar al izquierdo*/
-    display: flex;
-}
-.contacto .col{
+
+.contacto .col{/*Imagen*/
 width: 50%;
 padding: 10px;
 position: relative;
 }
-.contacto .col input, .contacto .col textarea{/*Se genera campos para llenar*/
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
-    font-size: 18px;
-}
-.contacto button{
-    background: none;
-    width: fit-content;
-    padding: 5px 40px;
-    border: 2px solid #ff9900;
-    color: #fff;
-    background: linear-gradient(to right, #ff5b00, #ff9900);
-    transition: .5s;
-    cursor: pointer;
-}
+
 .contacto .button .overlay{
    position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #fff;
+    background-color: #1e2326;
     z-index: -1;
     transition: 1s;
 }
-.Inicio .fila .col button:hover{ /*se agranda el boton descarga*/
-    transform: scale(1.1);
-}
+
 .contacto .col img{
     width: 140%;
+    transform: translate( 20%, 0%);
 }
-.contacto .col .info{/*Arreglar  que quede todo en una linea*/
+.contacto .col .info{
     position: absolute;
     top: 40%;
     background-color: #252A2E;
-    padding: 20px;
+    padding: 50px;
     width: fit-content;
-    left: 50%;
-    transform: translate(-10%, -30%);
-}
-.contacto .col .info ul{
-    list-style: none;
+    left: 10%;
+    transform: translate( 60%, -30%);
 }
 .contacto .col .info ul li{
     margin-bottom: 20px;
 }
+
 .contacto .col .info ul li i{
     color: #1CB698;
     display: inline-block;
@@ -338,6 +312,7 @@ footer{
     position: relative;
     width: 100%;
 }
+
 footer .redes{
     margin-bottom: 20px;
 }
@@ -351,13 +326,13 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
+    background-color: #1d9285;
     color: #fff;
     position: absolute;
     left: 50%;  
-    transform: translate(-50%);
+    transform: translate( -40%, -50%);
     top: -25px;	
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     line-height: 50px;
     font-size: 18px;
 }
