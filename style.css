@@ -82,7 +82,12 @@ body{
 .Inicio .fila .col .contenedor-img img{
     width: 100%;
     border-radius: 50%;
+    transition: transform 0.5s;
 }
+.Inicio .fila .col .contenedor-img img:hover{
+    transform: scale(1.1);
+}
+
 .Inicio .fila .col button{
     background: none;
     width: fit-content;
@@ -93,7 +98,7 @@ body{
     transition: .5s;
     cursor: pointer;
 }
-.Inicio .fila .col button:hover{ /*se agranda el boton descarga*/
+.Inicio .fila .col button:hover{ 
     transform: scale(1.1);
 }
 #icono-nav{
@@ -193,7 +198,7 @@ body{
 }
 
 .trabajos .galeria .item img{
-    width: 100%;
+    width: 330px;
     height: auto;
     display: block;
     margin-top: -20px;
@@ -332,7 +337,6 @@ footer .arriba{
     left: 50%;  
     transform: translate( -40%, -50%);
     top: -25px;	
-    /*border-radius: 50%;*/
     line-height: 50px;
     font-size: 18px;
 }
